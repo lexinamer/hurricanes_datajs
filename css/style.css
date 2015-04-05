@@ -300,4 +300,10 @@ h6 {
 	display: none;
 }
 
+.navlist-slogan li {
+  display: inline-table;
+  list-style-type: none;
+  padding-right: .5em;
+}
+
 }
