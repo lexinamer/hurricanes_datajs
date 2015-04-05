@@ -1,0 +1,303 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #f1f1f1;
+	font-size: 12pt;
+	color: #333333;
+
+}
+
+
+.smk_accordion.small {
+  margin-right: 0em;
+}
+
+h2 {
+  font-size: 2.3em;
+	margin-bottom: .8em;
+	line-height: 1.3em;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-family: Garamond;
+	line-height: 1.5em;
+  padding-right: 3em;
+	padding-bottom: 1.5em;
+}
+
+h4{
+	font-size: 1.5em;
+	margin-top: 2.6em;
+	margin-left: 1em;
+	color: #f18e31;
+	font-weight: 600;
+}
+
+h5{
+	color: #6d8ac4;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 1.2em;
+  color: white;
+}
+
+.weather{
+	font-size: .8em;
+	font-weight: 600;
+	color: #c9d4e9;
+	padding-left: .5em;
+}
+
+.top5{
+background-color: #819EB5;
+}
+
+.dateline {
+	text-transform: uppercase;
+	color: #999999;
+	font-size: .9em;
+}
+
+.slogan {
+	font-size: .5em;
+	text-transform: uppercase;
+  color: #aaaaaa;
+ 	font-weight: 700;
+	padding-left: 1em;
+}
+
+.navlist-slogan li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 2.5em;
+}
+
+.nav-slogan ul {
+	position: absolute;
+	padding-left: 1.8em;
+	padding-top: 1.3em;
+	font-size: .8em;
+
+}
+
+.smk_accordion .accordion_in .acc_content {
+  background: #F9F9F9;
+  color: #75777B;
+  padding: 3px 10px;
+  font-family: Garamond;
+}
+
+a {
+  color: #6d8ac4;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #becbe4;
+}
+
+ul {
+  font-size: 12px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 700;
+}
+
+.nav {
+	margin-left: 5%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.navlist li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+.nav-right {
+	position: absolute;
+	top: 50%;
+	margin-left: 80%;
+	transform: translateY(-50%);
+}
+
+.navlist-right li {
+	float: right;
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+.container {
+  width: 1300px;
+	background-color: white;
+}
+
+.sidebar {
+	border-left: 1px solid #ebebeb;
+}
+
+.header1{
+	width: 100%;
+	height: 50px;
+	background-color: #e0e0e0;
+	margin-bottom: 3px;
+}
+
+.header2{
+	width: 100%;
+	height: 150px;
+	background-color: #ebebeb;
+}
+
+.header3{
+	width: 100%;
+	margin-bottom: 1.2em;
+	padding-left: 2.5em;
+	border-bottom: 1px solid #dddddd;
+}
+
+.header3-container{
+	margin-top: 3em;
+	margin-bottom: 1em;
+}
+
+.npr-logo {
+	height: 25px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-left: .7em;
+}
+
+.social {
+	position:fixed;
+	width: 125px;
+	transform: translateZ(0);-webkit-transform: translateZ(0);
+	padding-left: 1.3em;
+}
+
+.ads {
+	width: 300px;
+	padding-top: 10px;
+	position: fixed;
+
+}
+
+.col-md-1 {
+	padding: 0px;
+}
+
+.col-md-3 {
+	padding-right: 0px;
+}
+
+.col-md-9 {
+	border-right: 1px solid #ebebeb;
+}
+
+.nav.nav-pills.nav-stacked {
+	position: none;
+	top: none;
+	transform: none;
+	margin: 0;
+	width: 100%;
+}
+
+.nav-pills>li>a {
+  border-radius: 0px;
+}
+
+.tab-pane.active {
+	background-color: #EBEBEB;
+}
+
+.cats {
+	padding: 10px;
+	font-size: .85em;
+}
+
+.graph-map{
+	margin-bottom: 4em;
+	margin-top: 2em;
+}
+
+#more-info {
+  margin-bottom: 2em;
+	margin-top: 0px;
+
+}
+
+.footer {
+	height: 100px;
+	background-color: #e0e0e0;
+}
+
+.sources {
+	float: right;
+	padding-top: 5.2em;
+	font-size: .8em;
+}
+
+@media (max-width: 990px) {
+.container{
+	width: auto;
+}
+
+.top5{
+	background-color: white;
+}
+
+.header3 {
+	padding-left: 1em;
+}
+
+.header3-container {
+	margin-top: 0em;
+}
+
+
+h4 {
+	margin-left: 0em;
+	margin-top: 0;
+	float: right;
+}
+
+h6 {
+	color: gray;
+}
+
+.header2 {
+  height: 110px;
+  padding-top: 10px;
+}
+
+.graph-map {
+  margin-bottom: 2em;
+}
+
+.nav-slogan ul {
+	padding-top: 3.5em;
+}
+
+.npr-logo {
+	padding-left: 0em;
+	top: 15px;
+	transform: none;
+}
+
+.header1 {
+	padding-left: 4px;
+}
+
+.slogan {
+	display: none;
+}
+
+}

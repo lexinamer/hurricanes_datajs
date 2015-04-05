@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Hurricanes from 1950-2005</title>
+
+    <!-- Main CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/responsive/1.0.4/css/dataTables.responsive.css"/>
+
+    <!-- Accordian CSS-->
+    <link rel="stylesheet" href="css/smk-accordion.css">
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- HighCharts JS-->
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <script src="http://code.highcharts.com/highcharts-more.js"></script>
+    <script src="http://code.highcharts.com/maps/modules/map.js"></script>
+    <script src="http://code.highcharts.com/mapdata/countries/us/us-all.js"></script>
+
+    <!-- Graphs JS -->
+    <script src="js/stateMap.js"></script>
+    <script src="js/perYear.js"></script>
+    <script src="js/categoriesBar.js"></script>
+    <script src="js/otherData.js"></script>
+
+    <!-- DataTables JS -->
+    <script src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+    <script src-"js/datatablesResponsive.js"></script>
+
+    <!-- Accodian JS -->
+    <script type="text/javascript" src="js/smk-accordion.js"></script>
+
+  </head>
+
+
+  <body>
+    <div class="container main"> <!-- main container -->
+
+        <div class="row"> <!-- header 1 -->
+          <div class="hidden-xs hidden-sm col-md-12 header1">
+            <img src="images/npr-logo.png" class="npr-logo">
+              <div class="nav">
+                <ul class="navlist">
+                  <li><a href="#">news</a></li>
+                  <li><a href="#">arts & life</a></li>
+                  <li><a href="#">music</a></li>
+                  <li><a href="#">topics</a></li>
+                  <li><a href="#">programs</a></li>
+                  <li><a href="#">listen</a></li>
+                </ul>
+              </div>
+              <div class="nav-right">
+                <ul class="navlist-right">
+                  <li><a href="#">shop</a></li>
+                  <li><a href="#">donate</a></li>
+                  <li><a href="#">stations</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 hidden-md hidden-lg header2">
+            <img src="images/npr-logo.png" class="npr-logo">
+            <h4>goats and soda <span class="slogan">Stories of life in a changing world</span></h4>
+            <div class="nav-slogan">
+              <ul class="navlist-slogan">
+                <li><a href="#hurricanes">hurricanes</a></li>
+                <li><a href="#state-map">state map</a></li>
+                <li><a href="#total-hurricanes">total hurricanes</a></li>
+                <li><a href="#more-info">names & damages</a></li>
+                <li><a href="#categories-chart">categories</a></li>
+                <li><a href="#find-hurricane">look up a hurricane</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-md-9"> <!-- left content -->
+
+            <div class="row"> <!-- header 2 -->
+              <div class="hidden-xs hidden-sm col-md-12 header2">
+                <h4>goats and soda <span class="slogan">Stories of life in a changing world</span></h4>
+                <div class="nav-slogan">
+                  <ul class="navlist-slogan">
+                    <li><a href="#hurricanes">hurricanes</a></li>
+                    <li><a href="#state-map">state map</a></li>
+                    <li><a href="#total-hurricanes">total hurricanes</a></li>
+                    <li><a href="#more-info">more info</a></li>
+                    <li><a href="#categories-chart">categories</a></li>
+                    <li><a href="#find-hurricane">look up a hurricane</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="row"> <!-- header 3 -->
+              <div class="col-md-12 header3">
+                <div class="header3-container">
+                  <a href="#" class="weather" id="hurricanes">weather</a>
+                  <h2>From King to Katrina: Hurricanes in the United States from 1950-2005</h2>
+                  <p class="dateline">April 5, 2015 | 12:53 AM ET</p>
+                  <div class="bio">
+                    <p>Lexi Namer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row"> <!-- content -->
+              <div class="hidden-xs col-md-2"> <!-- social media -->
+                <a href="#"><img src="images/share.png" class="social"></img></a>
+              </div>
+
+              <div class="col-md-10"> <!-- actual article content -->
+
+                <!-- Content 1 -->
+                <div class="row">
+                  <div class-"col-md-12">
+                    <h5>Hurricanes</h5>
+                    <h3>Hurricanes are a type of storm called a tropical cyclone, which forms over tropical or subtropical waters. They originate in the Atlantic basin, which includes the Atlantic Ocean, Caribbean Sea, and Gulf of Mexico, the eastern North Pacific Ocean, and, less frequently, the central North Pacific Ocean. A six-year rotating list of names, updated and maintained by the World Meteorological Organization, is used to identify these storms."Hurricane Season" begins on June 1 and ends on November 30, although hurricanes can, and have, occurred outside of this time frame.
+                    </h3>
+                      <div class="accordion">
+                        <div class="accordion_in">
+                          <div class="acc_head">What causes hurricanes?</div>
+                            <div class="acc_content">
+                              <p>The birth of a hurricane requires at least three conditions:
+                                <br><br>1. The ocean waters must be warm enough at the surface to put enough heat and moisture into the overlying atmosphere to provide the potential fuel for the thermodynamic engine that a hurricane becomes.
+                                <br><br>2. Atmospheric moisture from sea water evaporation must combine with that heat and energy to form the powerful engine needed to propel a hurricane.
+                                <br><br>3. A wind pattern must be near the ocean surface to spirals air inward. Bands of thunderstorms form, allowing the air to warm further and rise higher into the atmosphere.
+                                <br><br>If the winds at these higher levels are relatively light, this structure can remain intact and grow stronger, causing the beginnings of a hurricane
+                              </p>
+                            </div>
+                        </div>
+                          <div class="accordion_in">
+                            <div class="acc_head">Why do hurricanes mostly affect the east coast?</div>
+                              <div class="acc_content">
+                                <p>In the United States, hurricanes primarily form off Central Mexico. 95% of the time they move westward, away form land. Sometimes a hurricane hits Western Mexico or Baja California, but quickly loose their strength over the deserts with its remains bringing rains to the deserts of Arizona and California. Occasionally, a hurricane that formed off Mexico reaches Hawaii. Once in a while, an East Pacific hurricane travels far enough west to cross into the Eastern Hemisphere and then it is called a typhoon. <br><br>The fuel for the tropical cyclones is warm water, that's why hurricanes weaken rapidly once over land. The sea temperatures off California are not usually warm enough for tropical cyclone formation.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+
+                <!-- Map Graph -->
+                <div class="row graph-map" id="state-map">
+                  <h5>Number of hurricanes per state</h5>
+                  <div class="col-md-8" id="map"></div>
+                  <div class="col-md-4">
+                    <div class="row">
+                      <div class="col-md-12 top5">
+                        <h6>5 Cities Most Vulnerable to Hurricanes</h6>
+                          <div class="accordion small">
+                            <div class="accordion_in">
+                              <div class="acc_head">1. Tampa, FL</div>
+                                <div class="acc_content">
+                                  <p>It is extremely vulnerable to storm surge flooding, with about 125,000 people currently living below the flood level.</p>
+                                </div>
+                            </div>
+                            <div class="accordion_in">
+                              <div class="acc_head">2. Miami, FL</div>
+                                <div class="acc_content">
+                                  <p>While Miami residents have not experienced a major hurricane since Andrew, with about 79,000 people live below the flood level.</p>
+                                </div>
+                            </div>
+                            <div class="accordion_in">
+                              <div class="acc_head">3. New Orleans, LA</div>
+                                <div class="acc_content">
+                                  <p>The continued loss of wetlands puts New Orleans at a greater risk to being hit by Major Hurricanes. 340,000 people — nearly 100% of residents — live below flood level.
+                                  </p>
+                                </div>
+                            </div>
+                            <div class="accordion_in">
+                              <div class="acc_head">4. Norfolk, VA</div>
+                                <div class="acc_content">
+                                  <p>Vulnerable to hurricanes that move up the Eastern Seaboard, Virginia’s Chesapeake area has one of the fastest rates of sea level rise in the country. Nearly 59,000 people live below flood level throughout the area.
+                                  </p>
+                                </div>
+                            </div>
+                            <div class="accordion_in">
+                              <div class="acc_head">5. Houston, TX</div>
+                                <div class="acc_content">
+                                  <p>The sprawling metropolitan area, home to 6.1 million people, is vulnerable to hurricanes that traverse the Gulf of Mexico, with hurricanes striking once every 9-16 years.
+                                  </p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Line Graph -->
+                <h5 id="total-hurricanes">number of hurricanes per year</h5>
+                <div class="row graph-map">
+                  <div class="col-md-12" id="line-chart"></div>
+                </div>
+
+
+                <!-- Content 2 -->
+                <div class="row graph-map" id="more-info">
+                  <div class-"col-md-12">
+                    <h5>names and damages</h5>
+                    <div class="accordion">
+                        <div class="accordion_in">
+                          <div class="acc_head">How and why do we name hurricanes?</div>
+                            <div class="acc_content">
+                              <p>Until the early 1950s, tropical storms and hurricanes were tracked by year and the order in which they occurred during that year. Over time, it was learned that the use of short, easily remembered names in written as well as spoken communications is quicker and reduces confusion when two or more tropical storms occur at the same time. In the past, confusion and false rumors resulted when storm advisories broadcast from radio stations were mistaken for warnings concerning an entirely different storm located hundreds of miles away.
+
+                              <br><br>There are strict procedures established by the World Meteorological Organization for naming hurricanes. For Atlantic hurricanes, there is a list of male and female names which are used on a six-year rotation. The only time that there is a change is if a storm is so deadly or costly that the future use of its name on a different storm would be inappropriate. In the event that more than twenty-one named tropical cyclones occur in a season, any additional storms will take names from the Greek alphabet.
+                              </p>
+                            </div>
+                        </div>
+                        <div class="accordion_in">
+                          <div class="acc_head">Are certain names more dangerous than others?</div>
+                            <div class="acc_content">
+                              <p>A study suggests people prepare differently for hurricanes depending on whether the storm has a male or female name.<br><br>"Feminine-named hurricanes (vs. masculine-named hurricanes) cause significantly more deaths, apparently because they lead to a lower perceived risk and consequently less preparedness," a team of researchers wrote in the <a href="http://www.pnas.org/content/111/24/8782.abstract">Proceedings of the National Academy of Sciences.</a><br><br>The study analyzed death rates from U.S. hurricanes from 1950 to 2012. It suggests that changing a severe hurricane's name from Charley to Eloise could nearly triple its death toll.<br><br>However, it is important to note all hurricanes had female names until 1979 -- meaning the study included 29 years without male hurricane names.</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- Categories Content -->
+                <div class="row" id="categories-chart">
+                    <h5>Hurricane Categories</h5>
+                </div>
+                <div class="row graph-map">
+                  <div class="hidden-xs hidden-sm col-md-1">
+	                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="#cat1" data-toggle="tab">Cat. 1</a></li>
+                        <li><a href="#cat2" data-toggle="tab">Cat. 2</a></li>
+                        <li><a href="#cat3" data-toggle="tab">Cat. 3</a></li>
+                        <li><a href="#cat4" data-toggle="tab">Cat. 4</a></li>
+                        <li><a href="#cat5" data-toggle="tab">Cat. 5</a></li>
+	                     </ul>
+                  </div>
+
+                  <div class="col-xs-12 col-md-8" id="categories"></div>
+
+                  <div class="tab-content hidden-xs hidden-sm col-md-3">
+                    <div id="cat1" class="tab-pane active">
+                      <p class="cats"><strong>Very dangerous winds will produce some damage:</strong>
+                        <br> Well-constructed frame homes could have damage to roof, shingles, vinyl siding and gutters. Large branches of trees will snap and shallowly rooted trees may be toppled. Extensive damage to power lines and poles likely will result in power outages that could last a few to several days.</p>
+                    </div>
+                    <div id="cat2" class="tab-pane">
+                      <p class="cats"><strong>Extremely dangerous winds will cause extensive damage:</strong>
+                        <br> Well-constructed frame homes could sustain major roof and siding damage. Many shallowly rooted trees will be snapped or uprooted and block numerous roads. Near-total power loss is expected with outages that could last from several days to weeks.</p>
+                    </div>
+                    <div id="cat3" class="tab-pane">
+                      <p class="cats"><strong>Devastating damage will occur:</strong>
+                        <br> Well-built framed homes may incur major damage or removal of roof decking and gable ends. Many trees will be snapped or uprooted, blocking numerous roads. Electricity and water will be unavailable for several days to weeks after the storm passes.</p>
+                    </div>
+                    <div id="cat4" class="tab-pane">
+                      <p class="cats"><strong>Catastrophic damage will occur:</strong>
+                      </br> Well-built framed homes can sustain severe damage with loss of most of the roof structure and/or some exterior walls. Most trees will be snapped or uprooted and power poles downed. Fallen trees and power poles will isolate residential areas. Power outages will last weeks to possibly months. Most of the area will be uninhabitable for weeks or months.</p>
+                    </div>
+                    <div id="cat5" class="tab-pane">
+                      <p class="cats"><strong>Catastrophic damage will occur:</strong>
+                        <br> A high percentage of framed homes will be destroyed, with total roof failure and wall collapse. Fallen trees and power poles will isolate residential areas. Power outages will last for weeks to possibly months. Most of the area will be uninhabitable for weeks or months.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!--Categories Mobile -->
+                <div class="row">
+                  <div class="col-xm-12 hidden-md hidden-lg hidden-xl">
+                    <p class="cats"><strong>Category 1</strong>
+                      <br>Very dangerous winds will produce some damage:
+                        <br> Well-constructed frame homes could have damage to roof, shingles, vinyl siding and gutters. Large branches of trees will snap and shallowly rooted trees may be toppled. Extensive damage to power lines and poles likely will result in power outages that could last a few to several days.
+                    </p>
+                    <p class="cats"><strong>Category 2</strong>
+                        <br>Extremely dangerous winds will cause extensive damage:
+                          <br> Well-constructed frame homes could sustain major roof and siding damage. Many shallowly rooted trees will be snapped or uprooted and block numerous roads. Near-total power loss is expected with outages that could last from several days to weeks.
+                    </p>
+                    <p class="cats"><strong>Category 3</strong>
+                        <br>Devastating damage will occur:
+                          <br> Well-built framed homes may incur major damage or removal of roof decking and gable ends. Many trees will be snapped or uprooted, blocking numerous roads. Electricity and water will be unavailable for several days to weeks after the storm passes.
+                    </p>
+                    <p class="cats"><strong>Category 4</strong>
+                        <br>Catastrophic damage will occur:
+                        </br> Well-built framed homes can sustain severe damage with loss of most of the roof structure and/or some exterior walls. Most trees will be snapped or uprooted and power poles downed. Fallen trees and power poles will isolate residential areas. Power outages will last weeks to possibly months. Most of the area will be uninhabitable for weeks or months.
+                    </p>
+                    <p class="cats"><strong>Category 5</strong>
+                        <br>Catastrophic damage will occur:
+                          <br> A high percentage of framed homes will be destroyed, with total roof failure and wall collapse. Fallen trees and power poles will isolate residential areas. Power outages will last for weeks to possibly months. Most of the area will be uninhabitable for weeks or months.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Data Table -->
+                <div class="row graph-map" id="find-hurricane">
+                  <div class="col-md-12">
+                    <h5>Look up a Hurricane</h5>
+                    <table id="table" class="display" cellspacing="0" width="100%">
+                      <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Name</th>
+                            <th>State</th>
+                            <th>Category</th>
+                            <th>Damages</th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- end left content -->
+
+          <div class="hidden-xs col-md-3 sidebar"> <!-- right content/sidebar -->
+            <a href="#"><img src="images/ad.jpg" class="ads"></a>
+            <a href="#"><img src="images/morefrom.png" class="ads" style="padding-top: 275px;"></a>
+          </div>
+
+        </div> <!--end main content -->
+
+        <div class="row"> <!-- footer -->
+          <div class="col-md-12 footer">
+            <div class="sources">
+              <strong>SOURCES: </strong>
+                <a href="http://oceanservice.noaa.gov/"> NOAA</a> |
+                <a href="http://sciencepolicy.colorado.edu/publications/special/normalized_hurricane_damages.html">CSTPR</a> |
+                <a href="http://kids.earth.nasa.gov/archive/hurricane/creation.html">NASA</a> |
+                <a href="http://www.cnn.com/2014/06/03/us/female-hurricanes-deadlier/">CNN</a>
+            </div>
+          </div>
+        </div>
+
+    </div> <!-- end main container -->
+  </body>
+</html>
